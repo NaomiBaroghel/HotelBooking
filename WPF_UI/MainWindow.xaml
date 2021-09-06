@@ -1,0 +1,125 @@
+﻿<Window x:Class="WPF_UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_UI"
+        mc:Ignorable="d"     
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen"  ResizeMode="CanMinimize" >
+
+    <Window.Background>
+        <ImageBrush ImageSource="Images/house83.jpeg"></ImageBrush>
+
+    </Window.Background>
+   
+
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="client" Content="Client" FontSize="45"  Grid.Column="0" Background="Transparent"  Click="client_Click"   Foreground="Black" BorderBrush="Transparent" Margin="-6,-443,30,-111">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Button Name="play" Content="Music Stop"  FontSize="14" Click="play_Click" Margin="24,362,144,16"/>
+
+
+        <Button x:Name="hostingunit" Content="Hosting Unit" FontSize="45"  Click="hostingunit_Click" Background="Transparent" Foreground="Black"  BorderBrush="Transparent" Margin="240,-349,0,-19" Grid.ColumnSpan="2">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <!--<Setter Property="FontStyle" Value="Italic"/>-->
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="webmaster" Content="Web Master" Grid.Column="1"  FontSize="45" Click="webmaster_Click" Background="Transparent" Foreground="Black" BorderBrush="Transparent" Margin="264,-447,0,-117" Grid.ColumnSpan="2" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <!--<Setter Property="FontStyle" Value="Italic"/>-->
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+
+        <Button x:Name="add" FontSize="16" Height="76" Width="416" HorizontalAlignment="Right" VerticalAlignment="Top" Click="add_Click" Margin="0,335,181,0" Grid.ColumnSpan="3" Background="Transparent" >
+
+            <Border>
+                <Border.Style>
+                    <Style TargetType="Border">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Transparent" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+                <StackPanel Orientation="Horizontal">
+                    <Image  RenderOptions.BitmapScalingMode="HighQuality"   Source="Images/add2.jpg"    />
+                </StackPanel>
+            </Border>
+        </Button>
+
+        <TextBlock Text="ADD" RenderTransformOrigin="0.511,0.581" Background="LightGray"  Margin="52,335,181,58" Grid.Column="2"/>
+
+
+        <Button x:Name="close" Content="Close" Grid.Column="2" FontSize="16" Height="27" Width="58" HorizontalAlignment="Right" VerticalAlignment="Top" Click="close_Click" Margin="0,369,10,0" />
+        <Button x:Name="contact" Content="Contact Us" FontSize="16" Height="27" Width="107" HorizontalAlignment="Right" VerticalAlignment="Top" Click="contact_Click" Margin="0,328,10,0" IsEnabled="True" Grid.Column="2" />
+
+
+
+
+
+
+    </Grid>
+</Window>

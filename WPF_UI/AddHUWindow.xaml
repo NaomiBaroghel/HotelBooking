@@ -1,0 +1,87 @@
+﻿<Window x:Class="WPF_UI.AddHUWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_UI"
+        mc:Ignorable="d"
+        Title="AddHUWindow" Height="450" Width="800"  WindowStartupLocation="CenterScreen"  ResizeMode="CanMinimize">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/allbackground.jpg"></ImageBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="245*"/>
+            <ColumnDefinition Width="265*"/>
+            <ColumnDefinition Width="264*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="382*"/>
+            <RowDefinition Height="39*"/>
+        </Grid.RowDefinitions>
+
+        <Image Name="logo" Grid.ColumnSpan="3" Margin="95,317,-246.334,10" Height="94" Width="911" Grid.Column="1" Grid.RowSpan="2" >
+            <Image.Source>
+                <BitmapImage  DecodePixelWidth="300" UriSource="/Images/bandeau2.jpg"/>
+            </Image.Source>
+        </Image>
+        <!--MUST STAY FIRST-->
+        <Button x:Name="next" Content="Next" Grid.Column="3" FontSize="16" Height="27"  Width="52" HorizontalAlignment="Left" VerticalAlignment="Top" Click="next_Click" Margin="139,10,0,0" Grid.Row="1"  IsEnabled="False" IsDefault="True"/>
+
+
+        <TextBlock Text="Enter the name of the Hosting Unit :" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="4,0,0,336" Height="28" Width="215" Grid.Column="1" />
+        <TextBox x:Name="name"  Text="Name is..." TextChanged="TextBox_TextChangedName" Margin="16,51,123,302" Grid.Column="1"  FontStyle="Italic" Foreground="Gray" GotFocus="nameenter" LostFocus="nameleave" />
+        <Button x:Name="randomname" Content="Random Name" FontSize="12" Height="27" Width="96" HorizontalAlignment="Right" VerticalAlignment="Top" Click="randomname_Click" Margin="0,53,14,0" Grid.Column="1" RenderTransformOrigin="0.651,1.025" />
+
+        <TextBlock Text="Enter the price per night : " VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="4,0,0,261" Height="26" Width="215" Grid.Column="1" />
+        <TextBox x:Name="price"  Text="Price is..." PreviewTextInput="TextAllow"  Margin="16,126,123,227" Grid.Column="1" FontStyle="Italic" Foreground="Gray" GotFocus="priceenter" LostFocus="priceleave" />
+        <ComboBox x:Name="moneycombobox" Grid.Column="1"  Margin="163,126,10,227" SelectedIndex="0" SelectionChanged="moneycombobox_SelectionChanged"  />
+
+        <Label x:Name="rooms" Content="Rooms" FontSize="15" Grid.Column="1" Margin="10,172,176,160" />
+        <Label x:Name="beds" Content="Beds" FontSize="15" Grid.Column="1" Margin="10,214,167,119" />
+
+        <Button x:Name="roomsless" Content="-" Grid.Column="1" FontSize="16" Height="25" Width="16" HorizontalAlignment="Right" VerticalAlignment="Top" Click="roomsless_Click" Margin="0,174,66,0"  />
+        <Button x:Name="bedsless" Content="-" Grid.Column="1" FontSize="16" Height="25" Width="16" HorizontalAlignment="Right" VerticalAlignment="Top" Click="bedsless_Click" Margin="0,214,67,0"  />
+
+        <TextBlock x:Name="roomscounter" Text="1" FontSize="15" Margin="193,174,35,182" Grid.Column="1"/>
+        <TextBlock x:Name="bedscounter" Text="1" FontSize="15" Margin="193,216,35,141" Grid.Column="1"/>
+
+
+        <Button x:Name="roomsplus" Content="+" Grid.Column="1" FontSize="16" Height="25" Width="16" HorizontalAlignment="Right" VerticalAlignment="Top" Click="roomsplus_Click" Margin="0,174,10,0" RenderTransformOrigin="0.344,1.26"  />
+        <Button x:Name="bedsplus" Content="+" Grid.Column="1" FontSize="16" Height="25" Width="16" HorizontalAlignment="Right" VerticalAlignment="Top" Click="bedsplus_Click" Margin="0,214,10,0"  />
+
+        <ComboBox x:Name="areacombobox" Grid.Column="1"  Margin="0,268,152,76"   SelectedIndex="2" SelectionChanged="areacombobox_SelectionChanged"/>
+        <ComboBox x:Name="subareacombobox" Grid.Column="1"  Margin="4,317,148,27" SelectedIndex="0" SelectionChanged="subareacombobox_SelectionChanged"  />
+
+        <ComboBox x:Name="typecombobox" Grid.Column="1"  Margin="152,268,0,76" SelectedIndex="0" SelectionChanged="typecombobox_SelectionChanged"  />
+        <ComboBox x:Name="kasheroutcombobox" Grid.Column="1"  Margin="152,317,0,27" SelectedIndex="0" SelectionChanged="kasheroutcombobox_SelectionChanged"  />
+
+        <CheckBox x:Name="pool"  Content="Pool" IsChecked="False" Grid.Column="2"  Margin="82,30,119,329" IsEnabled="True" Checked="CheckBox_Pool" Unchecked="UncheckBox_Pool" />
+        <CheckBox x:Name="poolseparated"  Content="Pool Separated" IsChecked="False" Grid.Column="2"  Margin="119,53,36,302" IsEnabled="False" Checked="CheckBox_PoolSeparated" Unchecked="UncheckBox_PoolSeparated" />
+        <CheckBox x:Name="jaccuzi"  Content="Jaccuzi" IsChecked="False" Grid.Column="2"  Margin="82,89,119,258" IsEnabled="True" Checked="CheckBox_Jaccuzi" Unchecked="UncheckBox_Jaccuzi"  />
+        <CheckBox x:Name="garden"  Content="Garden" IsChecked="False" Grid.Column="2"  Margin="82,140,119,215" IsEnabled="True" Checked="CheckBox_Garden" Unchecked="UncheckBox_Garden"  />
+        <CheckBox x:Name="childrenattraction"  Content="Children Attraction" IsChecked="False" Grid.Column="2"  Margin="82,190,36,162" IsEnabled="True" Checked="CheckBox_ChildrenAttraction" Unchecked="UncheckBox_ChildrenAttraction" />
+        <CheckBox x:Name="sea"  Content="Sea" IsChecked="False" Grid.Column="3"  Margin="104,68,96,281" IsEnabled="True" Checked="CheckBox_Sea"  Unchecked="UncheckBox_Sea" />
+        <CheckBox x:Name="mountain"  Content="Mountain" IsChecked="False" Grid.Column="3"  Margin="104,108,73,247" IsEnabled="True" Checked="CheckBox_Mountain" Unchecked="UncheckBox_Mountain"  />
+        <CheckBox x:Name="bethabbad"  Content="Bet Habbad" IsChecked="False" Grid.Column="3"  Margin="104,160,61,183" IsEnabled="True" Checked="CheckBox_BetHabbad" Unchecked="UncheckBox_BetHabbad"  />
+        <CheckBox x:Name="super"  Content="Super" IsChecked="False" Grid.Column="3"  Margin="104,204,96,141" IsEnabled="True" Checked="CheckBox_Super" Unchecked="UncheckBox_Super" />
+
+        <Button x:Name="image" Content="Add Image" FontSize="12" Height="27" Width="96" HorizontalAlignment="Right" VerticalAlignment="Top" Click="image_Click" Margin="0,268,87,0" Grid.Column="2" RenderTransformOrigin="0.651,1.025" />
+        <Button x:Name="video" Content="Add Video" FontSize="12" Height="27" Width="96" HorizontalAlignment="Right" VerticalAlignment="Top" Click="video_Click" Margin="0,317,87,0" Grid.Column="2" RenderTransformOrigin="0.651,1.025" IsEnabled="True" />
+
+
+        <TextBlock Text="Enter the password of this Hosting Unit :" Margin="10,241,27,114" Grid.Column="3" />
+        <PasswordBox x:Name="password" Margin="10,268,108,85" Grid.Column="3"   PasswordChanged="password_Changed" />
+
+
+        <Button x:Name="reset" Content="Reset"  Grid.Column="1"  Margin="158,6,10,6" Grid.Row="1" Click="reset_Click"  />
+        <Button x:Name="default" Content="Default"  Grid.Column="1"  Margin="10,6,158,6" Grid.Row="1" Click="default_Click"  />
+
+
+        <Button x:Name="cancel" Content="Cancel" FontSize="16" Height="27" Width="58" HorizontalAlignment="Right" VerticalAlignment="Top" Click="cancel_Click" Margin="0,10,10,0" Grid.Row="1" Grid.Column="3"  />
+
+
+
+    </Grid>
+</Window>

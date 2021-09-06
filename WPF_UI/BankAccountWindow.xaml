@@ -1,0 +1,53 @@
+﻿<Window x:Class="WPF_UI.BankAccountWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_UI"
+        mc:Ignorable="d"
+        Title="BankAccountWindow" Height="386.598" Width="691.753">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/allbackground.jpg"></ImageBrush>
+    </Window.Background>
+    <Grid>
+        <Image Name="logo" Margin="10,252,-237,10" Height="94" Width="911" >
+            <Image.Source>
+                <BitmapImage  DecodePixelWidth="300" UriSource="/Images/bandeau2.jpg"/>
+            </Image.Source>
+        </Image>
+        <TextBlock Text="Enter your Bank Account Number :" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="25,0,0,278" Height="24" Width="203" />
+        <TextBox x:Name="bankaccountnumber"  Text="My Bank Account Number is..." PreviewTextInput="TextAllow1"  Margin="44,78,456,239" FontStyle="Italic" Foreground="Gray" GotFocus="bankaccountnumberenter" LostFocus="bankaccountnumberleave" />
+
+        <!--<TextBlock Text="Enter your Bank Number :" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="25,0,0,210" Height="24" Width="203" />
+        <TextBox x:Name="banknumber"  Text="My Bank Number is..." PreviewTextInput="TextAllow2"  Margin="44,151,456,171" FontStyle="Italic" Foreground="Gray" GotFocus="banknumberenter" LostFocus="banknumberleave" />
+
+        <TextBlock Text="Enter your Branch Number :" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="25,0,0,142" Height="24" Width="203" />
+        <TextBox x:Name="branchnumber"  Text="My Branch Number is..." PreviewTextInput="TextAllow3"  Margin="44,219,456,109" FontStyle="Italic" Foreground="Gray" GotFocus="branchnumberenter" LostFocus="branchnumberleave"/>-->
+
+        
+        
+        <!--<ComboBox x:Name="banknamecombobox"  Margin="307,78,247,239" SelectedIndex="0" SelectionChanged="banknamecombobox_SelectionChanged"  />
+
+        <ComboBox x:Name="citycombobox"  Margin="514,78,40,239" SelectedIndex="0" SelectionChanged="citycombobox_SelectionChanged"  />-->
+
+
+        <TextBlock Text="Choose your bank :" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="25,0,0,188" Height="24" Width="203" />
+        <ComboBox x:Name="mynamecombobox"  Margin="62,168,487,132"  SelectionChanged="mynamecombobox_SelectionChanged"  />
+        <TextBlock Text="Choose your branch number :" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="315,0,0,188" Height="24" Width="203" />
+        <ComboBox x:Name="mybranchnumbercombobox"  Margin="401,168,153,149"  SelectionChanged="mybranchnumbercombobox_SelectionChanged"  />
+        
+
+        <!--<TextBlock Text="Enter your Branch Address :" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="332,0,0,190" />
+        <TextBox x:Name="branchaddress"  Text="My Branch Address is.." TextChanged="TextBox_TextChangedbranchaddress" Margin="359,171,129,152" FontStyle="Italic" Foreground="Gray" GotFocus="branchaddressenter" LostFocus="branchaddressleave" />-->
+
+
+
+
+
+        <CheckBox x:Name="collectionclearence"  Content="Allow Collection Clearence" FontSize="16" IsChecked="False"  Margin="373,225,10,104" IsEnabled="True" Checked="CheckBox_collectionclearence" Unchecked="UncheckBox_collectionclearence" />
+
+        <Button x:Name="ok" Content="OK" FontSize="16" Height="27" Width="58" HorizontalAlignment="Right" VerticalAlignment="Top" Click="ok_Click" Margin="0,319,112,0"  />
+        <Button x:Name="cancel" Content="Cancel" FontSize="16" Height="27" Width="58" HorizontalAlignment="Right" VerticalAlignment="Top" Click="cancel_Click" Margin="0,319,27,0"  />
+
+    </Grid>
+</Window>

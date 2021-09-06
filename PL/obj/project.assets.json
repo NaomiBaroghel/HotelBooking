@@ -1,0 +1,148 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BE/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/BE.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BE.dll": {}
+        }
+      },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "BE": "1.0.0",
+          "DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
+        }
+      },
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "BE": "1.0.0",
+          "DS2": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "DS2/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "BE": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DS2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DS2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BE/1.0.0": {
+      "type": "project",
+      "path": "../BE/BE.csproj",
+      "msbuildProject": "../BE/BE.csproj"
+    },
+    "BL/1.0.0": {
+      "type": "project",
+      "path": "../BL/BL.csproj",
+      "msbuildProject": "../BL/BL.csproj"
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
+    },
+    "DS2/1.0.0": {
+      "type": "project",
+      "path": "../DS2/DS2.csproj",
+      "msbuildProject": "../DS2/DS2.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "BE >= 1.0.0",
+      "BL >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Baroghel\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Baroghel\\source\\repos\\dotNet_Project_03_9361_6994\\WpfApp3\\PL\\PL.csproj",
+      "projectName": "PL",
+      "projectPath": "C:\\Users\\Baroghel\\source\\repos\\dotNet_Project_03_9361_6994\\WpfApp3\\PL\\PL.csproj",
+      "packagesPath": "C:\\Users\\Baroghel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Baroghel\\source\\repos\\dotNet_Project_03_9361_6994\\WpfApp3\\PL\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Baroghel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\Baroghel\\source\\repos\\dotNet_Project_03_9361_6994\\WpfApp3\\BE\\BE.csproj": {
+              "projectPath": "C:\\Users\\Baroghel\\source\\repos\\dotNet_Project_03_9361_6994\\WpfApp3\\BE\\BE.csproj"
+            },
+            "C:\\Users\\Baroghel\\source\\repos\\dotNet_Project_03_9361_6994\\WpfApp3\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\Baroghel\\source\\repos\\dotNet_Project_03_9361_6994\\WpfApp3\\BL\\BL.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

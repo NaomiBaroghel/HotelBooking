@@ -1,0 +1,14 @@
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\bin\Debug\netcoreapp3.1\PL1.exe
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\bin\Debug\netcoreapp3.1\PL1.deps.json
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\bin\Debug\netcoreapp3.1\PL1.runtimeconfig.json
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\bin\Debug\netcoreapp3.1\PL1.runtimeconfig.dev.json
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\bin\Debug\netcoreapp3.1\PL1.dll
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\bin\Debug\netcoreapp3.1\PL1.pdb
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\bin\Debug\netcoreapp3.1\BE.dll
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\bin\Debug\netcoreapp3.1\BE.pdb
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\obj\Debug\netcoreapp3.1\PL1.csprojAssemblyReference.cache
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\obj\Debug\netcoreapp3.1\PL1.AssemblyInfoInputs.cache
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\obj\Debug\netcoreapp3.1\PL1.AssemblyInfo.cs
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\obj\Debug\netcoreapp3.1\PL1.csproj.CopyComplete
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\obj\Debug\netcoreapp3.1\PL1.dll
+C:\Users\Baroghel\source\repos\WpfApp3\PL1\obj\Debug\netcoreapp3.1\PL1.pdb

@@ -1,0 +1,95 @@
+﻿<Window x:Class="WPF_UI.PrivateSpaceHUWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_UI"
+        mc:Ignorable="d"
+        Title="PrivateSpaceHUWindow" Height="450" Width="800"  WindowStartupLocation="CenterScreen"  ResizeMode="CanMinimize">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/allbackground.jpg"></ImageBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Name="logo" Margin="77,304,-194,23" Height="94" Width="911" Grid.ColumnSpan="3" >
+            <Image.Source>
+                <BitmapImage  DecodePixelWidth="300" UriSource="/Images/bandeau2.jpg"/>
+            </Image.Source>
+        </Image>
+
+        <Button x:Name="update" Content="Update" FontSize="45"  Grid.Column="0" Background="Transparent"  Click="update_Click"   Foreground="Black" BorderBrush="Transparent" Margin="-6,-443,30,-111">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <!--<Setter Property="FontStyle" Value="Italic"/>-->
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+
+        <Button x:Name="order" Content="Order" FontSize="45"  Click="order_Click" Background="Transparent" Foreground="Black"  BorderBrush="Transparent" Margin="240,-349,0,-19" Grid.ColumnSpan="2">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <!--<Setter Property="FontStyle" Value="Italic"/>-->
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="remove" Content="Remove" Grid.Column="1"  FontSize="45" Click="remove_Click" Background="Transparent" Foreground="Black" BorderBrush="Transparent" Margin="264,-447,0,-117" Grid.ColumnSpan="2" >
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <!--<Setter Property="FontStyle" Value="Italic"/>-->
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button x:Name="cancel" Content="Cancel" FontSize="16" Height="27" Width="58" HorizontalAlignment="Right" VerticalAlignment="Top" Click="cancel_Click" Margin="0,371,39,0" Grid.Column="2"  />
+
+    </Grid>
+</Window>

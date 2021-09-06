@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfHiking xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Hiking>
+    <area>Center</area>
+    <HikingName>Lifta</HikingName>
+    <hikingtime>AfterNoon</hikingtime>
+    <price>50</price>
+  </Hiking>
+  <Hiking>
+    <area>Center</area>
+    <HikingName>Ir David</HikingName>
+    <hikingtime>Night</hikingtime>
+    <price>75</price>
+  </Hiking>
+  <Hiking>
+    <area>South</area>
+    <HikingName>Mitspe Ramon</HikingName>
+    <hikingtime>AllDayLong</hikingtime>
+    <price>150</price>
+  </Hiking>
+</ArrayOfHiking>

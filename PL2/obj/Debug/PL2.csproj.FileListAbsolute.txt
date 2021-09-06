@@ -1,0 +1,16 @@
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\bin\Debug\PL2.exe.config
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\bin\Debug\PL2.exe
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\bin\Debug\PL2.pdb
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\obj\Debug\PL2.csprojAssemblyReference.cache
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\obj\Debug\PL2.exe
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\obj\Debug\PL2.pdb
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\bin\Debug\BE.dll
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\bin\Debug\BE.pdb
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\obj\Debug\PL2.csproj.CopyComplete
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\bin\Debug\BL.dll
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\bin\Debug\DAL.dll
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\bin\Debug\DS1.exe
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\bin\Debug\BL.pdb
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\bin\Debug\DAL.pdb
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\bin\Debug\DS1.pdb
+C:\Users\Baroghel\source\repos\WpfApp3\PL2\bin\Debug\DS1.exe.config

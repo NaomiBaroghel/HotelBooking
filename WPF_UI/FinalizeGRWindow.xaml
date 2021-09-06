@@ -1,0 +1,45 @@
+﻿<Window x:Class="WPF_UI.FinalizeGRWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_UI"
+        mc:Ignorable="d"
+        Title="FinalizeGRWindow" Height="400" Width="500"  WindowStartupLocation="CenterScreen"  ResizeMode="CanMinimize">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/allbackground.jpg"></ImageBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="386*"/>
+            <RowDefinition Height="33*"/>
+        </Grid.RowDefinitions>
+
+        <Image Name="logo" Margin="69,2,-171,283" >
+            <Image.Source>
+                <BitmapImage  DecodePixelWidth="300" UriSource="/Images/bandeau2.jpg"/>
+            </Image.Source>
+        </Image>
+
+        <!--ADDREQUEST NEED TO STAY FIRST DONT CHANGE IT !!-->
+        <Button x:Name="addrequest" Content="Add Request" FontSize="16" Height="27"  Width="146" HorizontalAlignment="Left" VerticalAlignment="Top" Click="addrequest_Click" Margin="263,0,0,0" Grid.Row="1"  IsEnabled="False" IsDefault="True" />
+
+
+
+        <TextBlock Text="Enter your Family Name:" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,286" />
+        <TextBox x:Name="family"  Text="My Family Name is.." TextChanged="TextBox_TextChangedFamily" Margin="10,59,275,254"  FontStyle="Italic" Foreground="Gray" GotFocus="familyenter" LostFocus="familyleave"/>
+
+        <TextBlock Text="Enter your Private Name:" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,219" />
+        <TextBox x:Name="Private"  Text="My Private Name is.." TextChanged="TextBox_TextChangedPrivate" Margin="10,126,275,187" FontStyle="Italic" Foreground="Gray" GotFocus="privateenter" LostFocus="privateleave" />
+
+        <TextBlock Text="Enter your Address Mail :" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,148" />
+        <TextBox x:Name="mail"  Text="someone@exemple.com" TextChanged="TextBox_TextChangedMail" Margin="10,197,275,116" FontStyle="Italic" Foreground="Gray" GotFocus="mailenter" LostFocus="mailleave" />
+
+        <CheckBox x:Name="newsletter" Content="You want to subcribe to our newsletter for FREE ?" IsChecked="False"  Margin="69,229,83,85" Checked="newsletter_Checked" Unchecked="newsletter_Unchecked"  />
+
+
+
+        <Button x:Name="cancel" Content="Cancel" Grid.Column="3" Grid.Row="1" FontSize="16" Height="27" Width="58" HorizontalAlignment="Right" VerticalAlignment="Top" Click="cancel_Click" Margin="0,0,20,0"  />
+
+    </Grid>
+</Window>

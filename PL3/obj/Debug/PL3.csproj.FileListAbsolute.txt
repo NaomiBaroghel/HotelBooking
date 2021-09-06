@@ -1,0 +1,9 @@
+C:\Users\Baroghel\source\repos\WpfApp3\PL3\bin\Debug\PL3.exe.config
+C:\Users\Baroghel\source\repos\WpfApp3\PL3\bin\Debug\PL3.exe
+C:\Users\Baroghel\source\repos\WpfApp3\PL3\bin\Debug\PL3.pdb
+C:\Users\Baroghel\source\repos\WpfApp3\PL3\obj\Debug\PL3.csprojAssemblyReference.cache
+C:\Users\Baroghel\source\repos\WpfApp3\PL3\obj\Debug\PL3.exe
+C:\Users\Baroghel\source\repos\WpfApp3\PL3\obj\Debug\PL3.pdb
+C:\Users\Baroghel\source\repos\WpfApp3\PL3\bin\Debug\BE.dll
+C:\Users\Baroghel\source\repos\WpfApp3\PL3\bin\Debug\BE.pdb
+C:\Users\Baroghel\source\repos\WpfApp3\PL3\obj\Debug\PL3.csproj.CopyComplete

@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6538AA29-8806-4F24-B99E-D617DDF7A96B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WPF_UI</RootNamespace>
+    <AssemblyName>WPF_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=1.4.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.1.4.18\lib\net\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AddHUWindow.xaml.cs">
+      <DependentUpon>AddHUWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BankAccountWindow.xaml.cs">
+      <DependentUpon>BankAccountWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CheckBankAccountWindow.xaml.cs">
+      <DependentUpon>CheckBankAccountWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChoiceWindow3.xaml.cs">
+      <DependentUpon>ChoiceWindow3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChoiceWindow2.xaml.cs">
+      <DependentUpon>ChoiceWindow2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChoiceWindow4.xaml.cs">
+      <DependentUpon>ChoiceWindow4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Linq\LinqUserControl.xaml.cs">
+      <DependentUpon>LinqUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageWindow.xaml.cs">
+      <DependentUpon>MessageWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GRUserControl.xaml.cs">
+      <DependentUpon>GRUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HostWindow.xaml.cs">
+      <DependentUpon>HostWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ByeByeWindow.xaml.cs">
+      <DependentUpon>ByeByeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChoiceWindow.xaml.cs">
+      <DependentUpon>ChoiceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FinalizeGRWindow.xaml.cs">
+      <DependentUpon>FinalizeGRWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HUUserControl.xaml.cs">
+      <DependentUpon>HUUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OrderUserControl.xaml.cs">
+      <DependentUpon>OrderUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OrderWindow.xaml.cs">
+      <DependentUpon>OrderWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordHUWindow.xaml.cs">
+      <DependentUpon>PasswordHUWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordMailWindow.xaml.cs">
+      <DependentUpon>PasswordMailWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateImageWindow.xaml.cs">
+      <DependentUpon>UpdateImageWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImageWindow.xaml.cs">
+      <DependentUpon>ImageWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreateOrderWindow.xaml.cs">
+      <DependentUpon>CreateOrderWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordWindow.xaml.cs">
+      <DependentUpon>PasswordWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrivateSpaceHUWindow.xaml.cs">
+      <DependentUpon>PrivateSpaceHUWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveHUWindow.xaml.cs">
+      <DependentUpon>RemoveHUWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SaladWindow.xaml.cs">
+      <DependentUpon>SaladWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrivateSpaceWindow.xaml.cs">
+      <DependentUpon>PrivateSpaceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateBankAccountWindow.xaml.cs">
+      <DependentUpon>UpdateBankAccountWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateHostWindow.xaml.cs">
+      <DependentUpon>UpdateHostWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateHUWindow.xaml.cs">
+      <DependentUpon>UpdateHUWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateOrderWindow.xaml.cs">
+      <DependentUpon>UpdateOrderWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateVideoWindow.xaml.cs">
+      <DependentUpon>UpdateVideoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VideoWindow.xaml.cs">
+      <DependentUpon>VideoWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeWindow.xaml.cs">
+      <DependentUpon>WelcomeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WMWindow.xaml.cs">
+      <DependentUpon>WMWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AddGRWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddHUWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BankAccountWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CheckBankAccountWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChoiceWindow3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChoiceWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChoiceWindow4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Linq\LinqUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MessageWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GRUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HostWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ByeByeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChoiceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FinalizeGRWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HUUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HUWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OrderUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OrderWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PasswordHUWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PasswordMailWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateImageWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImageWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AddGRWindow.xaml.cs">
+      <DependentUpon>AddGRWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HUWindow.xaml.cs">
+      <DependentUpon>HUWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="CreateOrderWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PasswordWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrivateSpaceHUWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RemoveHUWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SaladWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrivateSpaceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateBankAccountWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateHostWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateHUWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateOrderWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateVideoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VideoWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WelcomeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WMWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\BE.BLException.datasource" />
+    <None Include="Properties\DataSources\BE.Branch.datasource" />
+    <None Include="Properties\DataSources\BE.Configuration.datasource" />
+    <None Include="Properties\DataSources\BE.DALException.datasource" />
+    <None Include="Properties\DataSources\BE.GuestRequest.datasource" />
+    <None Include="Properties\DataSources\BE.Hiking.datasource" />
+    <None Include="Properties\DataSources\BE.Host.datasource" />
+    <None Include="Properties\DataSources\BE.HostingUnit.datasource" />
+    <None Include="Properties\DataSources\BE.Order.datasource" />
+    <None Include="Properties\DataSources\BE.RentaCar.datasource" />
+    <None Include="Properties\DataSources\BE.UIException.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE\BE.csproj">
+      <Project>{612c899b-822d-489f-a35c-6b4f7404c22c}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{bad07f28-5bbf-4680-8b92-7f85acdfa9cd}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\gezerimg.jpg" />
+    <Resource Include="Images\hatsilmayoimg.jpg" />
+    <Resource Include="Images\houmousimg.jpg" />
+    <Resource Include="Images\krouvimg.jpg" />
+    <Resource Include="Images\makbouhaimg.jpg" />
+    <Resource Include="Images\selekimg.jpg" />
+    <Resource Include="Images\thinaimg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="house.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pandabyebyeimg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\panda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\background.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\background3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\background5.jpg" />
+    <Resource Include="Images\background4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\background6.jpeg" />
+    <Resource Include="Images\background7.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logo2.jpg" />
+    <Resource Include="Images\welcome.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\welcomelogo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fond.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bandeau.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\allbackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bandeau2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\house.jpg" />
+    <Resource Include="Images\house2.jpeg" />
+    <Resource Include="Images\house3.jpg" />
+    <Resource Include="Images\house4.jpg" />
+    <Resource Include="Images\house6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\house7.jpg" />
+    <Resource Include="Images\house8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\house82.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\house83.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\emptyimage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\mouseclick.wav" />
+    <Content Include="Images\pinson.wav" />
+    <Content Include="Images\wave.wav" />
+    <Content Include="Images\wave.mp3" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

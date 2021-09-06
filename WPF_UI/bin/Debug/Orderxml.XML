@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order>
+    <HostingUnitKey>200000001</HostingUnitKey>
+    <GuestRequestKey>1000000003</GuestRequestKey>
+    <OrderKey>300000001</OrderKey>
+    <status>Accepted</status>
+    <CreateDate>0001-01-01T00:00:00</CreateDate>
+    <OrderDate>2020-01-29T09:53:04.3136983+02:00</OrderDate>
+    <priceTotal>1368</priceTotal>
+  </Order>
+</ArrayOfOrder>

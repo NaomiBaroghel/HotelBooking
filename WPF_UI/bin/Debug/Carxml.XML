@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ArrayOfRentaCar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RentaCar>
+    <name>Aviv</name>
+    <area>Center</area>
+    <address>78 Ben Tsion</address>
+  </RentaCar>
+  <RentaCar>
+    <name>Hertz</name>
+    <area>South</area>
+    <address>25 Jerusalem</address>
+  </RentaCar>
+</ArrayOfRentaCar>
